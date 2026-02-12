@@ -1,0 +1,83 @@
+.cabecalho {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 30px;
+    border-bottom: 1px solid black;
+}
+.menu-icon {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.i-cart,
+.i-user,
+.i-exit {
+    cursor: pointer;
+}
+
+
+.logo {
+    width: 70px;
+    height: auto;
+    cursor: pointer;
+}
+
+.nav {
+    display: flex;
+    gap: 24px;
+    margin: 0 auto;
+}
+
+.nav a {
+    cursor: pointer;
+    border-bottom: 1px solid black;
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.nav a:hover,
+.i-cart:hover,
+.i-user:hover,
+.i-exit:hover {
+    transform: scale(1.1);
+    color: #000;
+
+}
+
+
+.acoes {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-size: 25px;
+}
+
+.nav-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+
+    .nav {
+        position: absolute;
+        top: 70px;
+        right: 0;
+        background: white;
+        flex-direction: column;
+        width: 200px;
+        padding: 20px;
+        display: none;
+    }
+
+    .nav.active {
+        display: flex;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+}

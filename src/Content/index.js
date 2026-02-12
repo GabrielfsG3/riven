@@ -14,24 +14,6 @@ export default function Content() {
             <div className="slider">
                 <img src={slide} alt="show" />
             </div>
-            
-            <nav className="itens">
-                <div className="item">A</div>
-                <div className="item">B</div>
-                <div className="item">C</div>
-                <div className="item">D</div>
-
-            </nav>
-
-            <nav className="collection">
-                <div className="algo">C</div>
-                <div className="algo">C</div>
-                <div className="algo">C</div>
-                
-            </nav>
-            <div className="banner-rodape">
-                <img src={rodape} alt="rodape"/>
-            </div>
 
         </div>
     );

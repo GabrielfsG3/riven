@@ -6,6 +6,7 @@ import { TiShoppingCart } from "react-icons/ti";
 import { useState } from "react";
 import { FaBars } from "react-icons/fa";
 
+
 export default function Header() {
 
   const [open, setOpen] = useState(false);

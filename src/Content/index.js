@@ -1,7 +1,7 @@
 import "./index.css";
 import { CiSearch } from "react-icons/ci";
 import slide from "../imagens/banner.png"
-import rodape from "../imagens/rivenstreetlogo.png"
+
 
 export default function Content() {
     return (

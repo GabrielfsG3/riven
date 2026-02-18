@@ -1,6 +1,6 @@
 import "./index.css";
 import { CiSearch } from "react-icons/ci";
-import slide from "../imagens/banner.png"
+
 
 
 export default function Content() {
@@ -12,7 +12,7 @@ export default function Content() {
             </div>
 
             <div className="slider">
-                <img src={slide} alt="show" />
+                <img src="/imagens/banner.png" alt="show" />
             </div>
 
         </div>

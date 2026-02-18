@@ -1,5 +1,4 @@
 import "./index.css";
-import logo from "../imagens/logo.png";
 import { ImExit } from "react-icons/im";
 import { FiUser } from "react-icons/fi"
 import { TiShoppingCart } from "react-icons/ti";
@@ -14,7 +13,7 @@ export default function Header() {
   return (
 
     <header className="cabecalho">
-      <img src={logo} alt="logo" className="logo" />
+      <img src="/imagens/banner.png" alt="logo" className="logo" />
       <FaBars className="menu-icon" onClick={() => setOpen(!open)} />
       
       <div className="nav-container">

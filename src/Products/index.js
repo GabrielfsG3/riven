@@ -47,9 +47,10 @@ export default function Products() {
                     <SwiperSlide key={product.id}>
                         <div
                             className="album"
+                            id='album'
                             style={{ backgroundImage: `url(${product.image})` }}
                         >
-                            {product.name}
+                            <p className="name">{product.name}</p>
                         </div>
                     </SwiperSlide>
                 ))}

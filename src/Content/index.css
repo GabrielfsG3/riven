@@ -1,11 +1,26 @@
 
 .father {
     text-align: center;
-
+    padding-top: 100px;
 }
 
 .barra {
     background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+}
+.barra .search-icon {
+    color: #ccc;
+    font-size: 30px;
+    transition: 0.2s ease all    ;
+}
+
+.barra .search-icon:hover {
+    color: #fff;
+    cursor: pointer;
+    transform: scale(1.2);
 }
 
 .search {

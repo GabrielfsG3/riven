@@ -1,14 +1,12 @@
 import "./index.css";
 import { CiSearch } from "react-icons/ci";
 
-
-
 export default function Content() {
     return (
         <div className="father">
             <div className="barra">
                 <input className="search" type="text" placeholder="Buscar" />
-                <CiSearch />
+                <CiSearch className="search-icon" />
             </div>
 
             <div className="slider">

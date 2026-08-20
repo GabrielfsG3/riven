@@ -1,0 +1,149 @@
+.cart-page {
+    padding: 100px 20px 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.cart-title {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.empty {
+    text-align: center;
+    font-size: 18px;
+    color: #777;
+}
+
+.cart-content {
+    display: flex;
+    gap: 30px;
+}
+
+/* LISTA DE ITENS */
+.cart-items {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    border-radius: 8px;
+    padding: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.cart-item img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.item-info {
+    flex: 1;
+    margin-left: 15px;
+}
+
+.item-info h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.item-info p {
+    color: #666;
+    font-size: 14px;
+}
+
+.item-price {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* RESUMO */
+.cart-summary {
+    flex: 1;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    height: fit-content;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.cart-summary h2 {
+    margin-bottom: 10px;
+}
+
+.cart-summary span {
+    display: block;
+    font-size: 22px;
+    font-weight: bold;
+    margin: 10px 0 20px;
+}
+
+.checkout-btn {
+    width: 100%;
+    padding: 12px;
+    background: #ff6b00;
+    color: #fff;
+    border: none;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.2s;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.2s ease;
+}
+
+/* Hover forte */
+.checkout-btn:hover {
+    background: #e55a00;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(255, 94, 0, 0.3);
+}
+
+/* Clique */
+.checkout-btn:active {
+    transform: scale(0.95);
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+    .cart-content {
+        flex-direction: column;
+    }
+}
+
+.quantity-control {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 5px;
+}
+
+.quantity-control button {
+    width: 28px;
+    height: 28px;
+    border: none;
+    background: #ddd;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.quantity-control span {
+    font-weight: bold;
+}
+
+.remove-btn {
+    margin-top: 8px;
+    background: none;
+    border: none;
+    color: red;
+    cursor: pointer;
+    font-size: 13px;
+}
